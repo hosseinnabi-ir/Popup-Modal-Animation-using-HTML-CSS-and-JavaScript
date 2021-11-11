@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #ffa5b8, #ffc2cd);
+}
+
+.modal {
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: .4s;
+}
+
+.modal .modal-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 18px;
+}
+
+.modal .modal-header button {
+    cursor: pointer;
+    font-size: 22px;
+    color: #21202c;
+    background: transparent;
+}
+
+.modal .modal-body {
+    text-align: center;
+}
+
+.modal .modal-body img {
+    width: 40%;
+    margin: 10px 0 30px;
+}
+
+.modal .modal-body h3 {
+    color: #21202c;
+    font-size: 40px;
+}
+
+.modal .modal-body p {
+    color: #5a586d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal .modal-body button {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+    background: #fe425b;
+    color: #ffffff;
+    padding: 12px 120px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+
+.modal .modal-body button:hover {
+    background: #e0344b;
+}
+
+.modal#hide {
+    opacity: 0;
+    transform: scale(.6);
+    pointer-events: none;
+}
+
+.modal#show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+}
+
+#showButton {
+    cursor: pointer;
+    position: absolute;
+    background: #21202c;
+    color: #ffffff;
+    padding: 14px 22px;
+    font-size: 18px;
+    border-radius: 8px;
+    letter-spacing: .5px;
+}
